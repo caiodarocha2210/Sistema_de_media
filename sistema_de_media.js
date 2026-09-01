@@ -8,18 +8,18 @@ var n1 = 8.67,
 
 if(media < 6 || presenca < 50){
    if(media < 6 && presenca > 50){
-      console.log(`Você reprovou por média, com média: ${media.toFixed(1)}`)
+      console.log(`Você reprovou por média, com média: ${media.toFixed(1).replace('.',',')}`)
    }else if(media >= 6 && presenca < 50){
       console.log(`Você reprovou por faltas com presença: ${presenca}`)
    }else{
-      console.log(`Você reprovou por media e presença, com media: ${media.toFixed(1)} e presença: ${presenca}`);
+      console.log(`Você reprovou por media e presença, com media: ${media.toFixed(1).replace('.',',')} e presença: ${presenca}`);
    } 
 }else{
    if(!advert){
       media++;
       console.log('Você recebeu 1 ponto a mais na media por falta de advertências');
    }
-   console.log(`Você foi aprovado por media e presença, com media: ${media.toFixed(1)} e presença: ${presenca}`);
+   console.log(`Você foi aprovado por media e presença, com media: ${media.toFixed(1).replace('.',',')} e presença: ${presenca}`);
 }
 
 
